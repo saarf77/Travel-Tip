@@ -1,0 +1,13 @@
+/* SETUP  */
+@import 'setup/vars.css';
+
+/* BASE */
+@import 'basic/base.css';
+@import 'basic/helpers.css';
+
+/* COMPONENTS */
+@import 'components/header.css';
+@import 'components/main.css';
+
+/*MEDIAQUERIES */
+/* @import 'basic/mq.css'; */

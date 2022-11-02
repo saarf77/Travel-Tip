@@ -1,0 +1,114 @@
+main {
+    padding: 0 2em;
+    flex-grow: 1;
+    margin:0;
+}
+
+main .user-location {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+main .user-location h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+main .user-location h2 span {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--orange);
+}
+
+main .user-location button {
+    height: 40px;
+    width: 120px;
+}
+
+main .map-funcs {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+main button {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    height: 60px;
+    width: 100px;
+}
+
+main button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--orange);
+}
+
+main .locations h3 {
+    color: var(--primary);
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+main .locations button {
+    height: 48px;
+    width: 48px;
+}
+
+main .locations .location-name {
+    padding-left: 1em;
+    font-weight: 600;
+}
+
+main .locations .btn-delete {
+    background-color: var(--primary);
+    color: white;
+    width: 76px;
+    
+}
+
+main .locations .btn-delete:hover {
+    color: var(--orange);
+    width: 76px;
+}
+
+main .locations .btn-go {
+    background-color: var(--primary);
+    color: white;
+}
+
+main .locations .btn-go:hover {
+    color: var(--orange);
+}
+
+main button.btn-save-place {
+    height: 30px;
+    width: 60px;
+}
+
+main #map {
+    width: 100%;
+    margin-inline-start: 20px;
+    border-radius: 0.5em;
+    border: 1px solid var(--orange)
+}
+
+main h3.info-window {
+    margin: 0 0 10px;
+}
+
+
+/* table */
+
+.table{
+    background-color: var(--orange);
+    width: 100%;
+}
+
+
+
+/* weather-container */
+

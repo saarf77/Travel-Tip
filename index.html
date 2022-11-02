@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex col">
+    <header class="flex space-between align-center">
+        <h1>TravelTip</h1>
+        <section class="search flex">
+            <input type="text" placeholder="Look for location">
+            <button onsubmit="onSearchLoc(event.value)" class="btn-search">GO</button>
+        </section>
+    </header>
+    <main>
+        <section class="user-location flex space-between align-center">
+            <h2>Current Location: <span>blabla</span></h2>
+        </section>
+        <section class="main-app flex">
+            <section class="map-tools flex col">
+                <div class="map-funcs">
+                    <!-- <button class="btn-user-location">My location</button> -->
+                    <button onclick="onAddMarker()" class="btn-add-marker">Add Marker</button>
+                    <button onclick="onGetUserPos()" class="btn-user-pos">Get User Position</button>
+                    <!-- <button onclick="onGetLocs()" class="btn-get-locs">Get Locations</button> -->
+                    <button onclick="onPanTo()" class="btn-pan">Pan Map to Tokyo</button>
+                    <button onclick="onCopyLocation()" class="btn-copy-location">Copy location</button>
+                </div>
+            </section>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </section>
+    <p> <span class="user-pos"></span></p>
+    <!-- <p>You are at: <span class="user-pos"></span></p> -->
+    <div class=" locs-container hide">
+        <h3>Saved Locations:</h3>
+        <table border="1">
+            <thead>
+                <td>Name</td>
+                <td>Latitude</td>
+                <td>Longitude</td>
+                <td>Go there!</td>
+                <td>Delete location</td>
+            </thead>
+            <tbody class="locs"></tbody>
+        </table>
+    </div>
+    <section class="weather-container">
+        <h2>Weather Fordcast</h2>
+        <span class="icon">&#9824</span>
+        <span class="country">Germany</span>
+        <span class="description">Sunny</span>
+        <span class="temp">1&#176C</span>
+        <P>temperature from <span class="min-temp">0&#176C </span>to <span class="max-temp">5&#176C</span></P>
+        <p class="wind">wind <span>10</span>m/s</p>
+        
+    </section>
+    </main>
+    <footer class="footer">
+        <small class="flex justify-center align-center">copyrights saved to</small>
+    </footer>
+    <script src="js/lib/axios.js"></script>
+    <script type="module" src="js/app.controller.js"></script>
+</body>
+
+</html>
